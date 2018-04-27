@@ -1,0 +1,153 @@
+.Header {
+  padding: 0.5% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.Header h1 {
+  font-family: "Playfair Display SC", serif;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  margin: 8% 0;
+}
+
+.Header .menu_section,
+.Header .menu_section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.Header .menu_section div p {
+  margin: 0;
+}
+
+.Header .login {
+  justify-content: flex-end;
+}
+
+.Header .login .ant-btn {
+  width: 5em;
+  margin-left: 2em;
+}
+
+.Header .menu_section div * {
+  color: #000;
+}
+
+.Header div .anticon-shopping-cart {
+  padding: 5px;
+}
+
+.Header div .ant-btn-circle {
+  border-radius: 20px;
+}
+
+.Header .anticon:last-child {
+  padding: 6px;
+}
+
+.Header div .ant-btn {
+  border-color: #bebebe;
+  position: relative;
+}
+
+.Header .ant-btn:hover,
+.Header .ant-btn:focus,
+.ant-menu-item .ant-btn:hover,
+.ant-menu-item .ant-btn:focus {
+  border-color: #faad14;
+}
+
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+  margin-right: 0 !important;
+}
+
+.ant-menu-horizontal .ant-menu-submenu,
+.ant-menu-horizontal .ant-menu-submenu:hover {
+  border-bottom: 2px solid rgb(250, 173, 20) !important;
+  color: rgb(250, 173, 20);
+}
+
+.Header sup,
+div sup {
+  background-color: rgb(250, 173, 20);
+  position: absolute;
+  transform: translateX(-50%);
+  top: -10px;
+  left: 30px;
+  height: 20px;
+  border-radius: 10px;
+  min-width: 20px;
+  line-height: 15px;
+  text-align: center;
+  padding: 0 6px;
+  white-space: nowrap;
+  transform-origin: -10% center;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+.Header sup span,
+div sup span {
+  transition: none;
+  transform: translateY(-1200%);
+}
+
+.Header sup p,
+div sup p {
+  color: #fff !important;
+  font-size: 1.35em;
+  text-shadow: 1px 0px 7px #777;
+}
+
+.Header button,
+.Header div button {
+  border-radius: 0;
+  padding: 0 5%;
+}
+
+.Header .menu_section div a {
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: all 0.15s ease-in;
+}
+
+.Header .menu_section div a:hover {
+  border-top: 1px solid #faad14;
+  border-bottom: 1px solid #faad14;
+}
+
+.Header .menu_section div a:nth-child(2):hover {
+  border: transparent;
+}
+
+.ant-menu .ant-menu-item {
+  font-family: 'Cormorant';
+  margin-top: 10% !important;
+  overflow: inherit !important;
+}
+
+.ant-menu li a button {
+  margin-left: 5%;
+}
+
+@media (min-width: 830px) {
+  .Header .menu_section,
+  .Header .menu_section div {
+    width: 35%;
+    min-width: 35em;
+    margin: 1% 0;
+  }
+
+  .Header .login div {
+    width: inherit;
+    min-width: initial;
+  }
+  .Header h1 {
+    margin: 1% 0;
+    font-size: 2.5em;
+  }
+}

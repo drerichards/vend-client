@@ -1,0 +1,134 @@
+#root > div > div.Account{
+    margin: 0% auto 2%;
+    height: 85vh;
+    width: 95vw;
+}
+
+.ant-spin-nested-loading {
+    overflow: auto;
+    max-height: 65vh;
+}
+
+.Account .ant-list .ant-list-item .ant-list-item-meta{
+    flex: initial;
+}
+
+.Account .ant-list-item-meta h4{
+    font-weight: bold;
+}
+
+.Account > div > div.ant-spin-nested-loading > div > div > div.ant-list-item-meta > div > h4{
+    min-width: 8em;
+}
+
+.Account > div > div.ant-spin-nested-loading > div > div > div.ant-list-item-content > div:nth-child(1){
+    margin: 0 1em;
+}
+
+.Account .ant-list .ant-list-item .ant-list-item-content{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Account .ant-list-bordered{
+    border-radius: 0;
+}
+
+.Account .ant-list-bordered .ant-list-item{
+        padding-left: 20px;
+    padding-right: 20px;
+}
+.Account .ant-list-header{
+    background-color: #E54B4B;
+    font-family: "Playfair Display SC", serif;
+    color: #fff;
+    font-size: 70%;
+    font-size: 1.3em;
+    font-weight: 500;    
+}
+
+.Account .ant-list-footer{
+    font-family: "Cormorant", serif;
+    font-size: 70%;
+    font-size: 1.3em;
+    font-weight: 600;    
+}
+
+.Account .ant-list-item {
+    background-color: rgba(238, 228, 216, 0.22);
+    transition: 0.15s ease-in;
+}
+
+.Account .ant-list-item:nth-child(3n-1) {
+    background-color: rgba(51, 92, 103, 0.33);
+}
+
+.Account .ant-list-item:nth-child(3n-3) {
+    background-color: rgba(249, 173, 21, 0.329);
+}
+
+.Account .ant-list-item:hover {
+    background-color: rgba(184, 206, 77, 0.493);
+}
+
+/* modal */
+.Account button, .ant-modal-footer button{
+    font-family: "Cormorant", serif;
+    height: 2.5em;
+    margin-top: 1%;
+    border-radius: 0;
+    transition: 0.15s ease-in;
+    border-color: #bebebe;
+    background: #fff;
+    color: #000;
+}
+
+.Account button:hover, .Account button:focus,
+.ant-modal-footer button:hover, .ant-modal-footer button:focus{
+    background: #fff;
+    border-color: #faad14;
+    color: #000;
+}
+
+.ant-modal-wrap .ant-modal-content .ant-modal-header{
+    background: rgba(51, 92, 103, 0.85);
+    font-family: "Cormorant", serif;
+}
+
+.ant-modal-body {
+    overflow: auto;
+    max-height: 35em;
+}
+
+.ant-modal-header .ant-modal-title{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.ant-modal-close-x{
+    color: #fff;    
+}
+
+.ant-modal-wrap .ant-modal-content .ant-modal-body .ant-collapse-item .ant-collapse-content .ant-list-item-meta .ant-list-item-meta-avatar span{
+    width: 6em;
+    height: 6em;
+}
+
+.ant-modal-wrap .ant-modal-content .ant-modal-body .ant-collapse-item .ant-collapse-content .ant-list-item-meta .ant-list-item-meta-content h4{
+    margin-right: 4em;
+}
+
+.ant-modal-wrap .ant-modal-content .ant-modal-body .ant-collapse-item .ant-collapse-content .ant-list-item .ant-list-item-content{
+    flex: initial;
+}
+
+@media (min-width: 830px) {
+#root > div > div.Account{
+    width: 70vw;
+}
+
+.Account .ant-list-bordered .ant-list-item{
+        padding-left: 24px;
+    padding-right: 24px;
+}
+}

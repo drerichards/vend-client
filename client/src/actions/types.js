@@ -1,0 +1,11 @@
+export const CREATE_USER = 'create_user'
+export const LOGIN_USER = 'login_user'
+export const LOGOUT_USER = 'logout_user'
+export const FETCH_ATEL_PRODUCTS = "fetch_atel_products"
+export const FETCH_POKE_PRODUCTS = "fetch_poke_products"
+export const FETCH_NURB_PRODUCTS = "fetch_nurb_products"
+export const FETCH_USER_PURCHASES = "fetch_user_purhcases"
+export const ADD_TO_CART = "add_to_cart"
+export const REMOVE_FROM_CART = "remove_from_cart"
+export const CLEAR_CART = "clear_cart"
+export const STORE_PURCHASE = "store_purchase"

@@ -1,0 +1,11 @@
+{
+    "git.ignoreLimitWarning": true,
+    "[markdown]": {
+        "editor.wordWrap": "off",
+        "editor.quickSuggestions": false
+    },
+    "html.format.wrapAttributes": "force",
+    "prettier.proseWrap": "never",
+    "prettier.semi": false,
+    "prettier.jsxBracketSameLine": true
+}

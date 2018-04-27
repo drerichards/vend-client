@@ -1,0 +1,35 @@
+{
+  "name": "vendible",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "firebase": "^4.13.1",
+    "firebase-tools": "^3.18.4",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-jwt": "^3.0.1",
+    "passport-local": "^1.0.0",
+    "stripe": "^5.5.0"
+  }
+}

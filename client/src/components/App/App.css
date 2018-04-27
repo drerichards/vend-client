@@ -1,0 +1,10 @@
+.App > div:nth-child(2) {
+  height: 90vh;
+}
+
+@media (min-width: 830px) {
+.App > div:nth-child(2) {
+  margin: 0% 2% 2%;
+  height: 85vh;
+}
+}

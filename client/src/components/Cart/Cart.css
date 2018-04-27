@@ -1,0 +1,133 @@
+#root > div > div.Cart{
+    margin: 0% auto 2%;
+    height: 85vh;
+    width: 95vw;
+}
+
+.Cart .ant-list-item-meta{
+    flex: 2 1;
+        align-items: center;
+}
+
+.Cart .ant-list-item-meta-avatar{
+    margin-right: 0;
+}
+
+.Cart .ant-list-item-meta .ant-list-item-meta-avatar>span {
+    width: 4em;
+    height: 4em;
+}
+
+.Cart .ant-avatar > img{
+    width: 75%;
+}
+
+.Cart button {
+    border-radius: 0;
+    color: #000;
+}
+
+.Cart button:hover,
+.Cart button:focus {
+    color: #000;
+    border-color: #faad14;
+}
+
+.Cart .ant-collapse-borderless>.ant-collapse-item>.ant-collapse-content {
+    max-height: 55vh;
+    overflow: auto;
+}
+
+.Cart .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    background-color: rgba(51, 92, 103, 0.33);
+    font-size: 1.3em;
+    font-family: "Cormorant", serif;
+}
+
+.Cart .ant-list-item-meta-description {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.Cart .ant-collapse>.ant-collapse-item>.ant-collapse-header h3 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 98%;
+    display: inline;
+    letter-spacing: 0.5px;
+}
+
+.Cart .ant-list-item-meta-title,
+.Cart .ant-list-item-content {
+    font-family: "Cormorant", serif;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.Cart .ant-list-item-content i {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.877);
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.Cart .subtotal_section {
+    padding: 1em;
+    float: right;
+}
+
+.Cart .subtotal_section h3 {
+    display: inline;
+    font-size: 1.5em;
+    margin: 0.5em;
+    font-weight: 500;
+}
+
+.notifDescrip h4{
+    display: inline;
+    font-weight: 500;
+}
+
+.notifDescrip h4:nth-child(5) {
+    margin-right: 5%;
+}
+
+.notifDescrip p{
+    display: inline-block;
+    font-weight: 100;    
+}
+
+.ant-notification{
+    z-index: 21474836479 !important; 
+}
+
+iframe{
+    z-index: 21474836 !important;
+}
+
+.Cart .ant-list-item-meta-description{
+    display: none;
+}
+
+@media (min-width: 830px) {
+#root > div > div.Cart{
+    width: 70vw;
+}
+
+.Cart .Cart .ant-list-item-meta-title, .Cart .ant-list-item-content{
+    font-size: 20px;
+}
+
+.Cart .ant-list-item-meta .ant-list-item-meta-avatar>span {
+    width: 8em;
+    height: 8em;
+}
+
+.Cart .ant-avatar > img{
+    width: 100%;
+}
+
+.Cart .ant-list-item-meta-description{
+    display: initial;
+}
+}
