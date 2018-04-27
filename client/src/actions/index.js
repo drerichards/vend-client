@@ -10,7 +10,7 @@ import { ADD_TO_CART } from "./types"
 import {REMOVE_FROM_CART} from "./types"
 import {CLEAR_CART} from "./types"
 import { STORE_PURCHASE } from "./types"
-const url = "http://localhost:5000"
+const url = "https://lit-dusk-56061.herokuapp.com"
 
 export const createUser = (userBody, dispatch) => {
   try {
