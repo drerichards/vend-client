@@ -34,8 +34,6 @@ class Payment extends Component {
   }
 
   render() {
-    console.log(process.env.REACT_APP_STRIPE_KEY);
-    
     const cartTotal = this.props.subtotal,
       payTotal = cartTotal * 100,
       description = `For your purchase of $${cartTotal}`
