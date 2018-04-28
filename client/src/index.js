@@ -10,7 +10,7 @@ import App from "./components/App/App"
 import "./index.css"
 import registerServiceWorker from "./registerServiceWorker"
 
-const enhancer = composeWithDevTools(applyMiddleware(thunk, createLogger({ collapsed: true })))
+const enhancer = composeWithDevTools(applyMiddleware(thunk))
 const persistedState = loadState()
 const store = createStore(reducers, persistedState, enhancer)
 store.subscribe(() => saveState(store.getState()))
