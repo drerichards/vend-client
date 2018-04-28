@@ -1,6 +1,5 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Cormorant:400,400i,500|Prata');
-
 * {
   box-sizing: border-box;
 }
@@ -34,7 +33,7 @@ html {
 a {
   text-decoration: none;
   transition: all .2s ease-in;
-  color: #000 !important;  
+  color: #000 !important;
 }
 
 a:link {

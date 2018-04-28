@@ -13,7 +13,7 @@
   color: #000 !important;
 }
 
-.Stores h1{
+.Stores h1 {
   font-size: 1.5em;
 }
 
@@ -99,17 +99,17 @@
 .Stores .ant-row .ant-col-8:nth-child(1)>div>div.ant-card-cover {
   background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/couple.jpg");
   background-position: right;
-  height: 55%;  
+  height: 55%;
 }
 
 .Stores .ant-row .ant-col-8:nth-child(2)>div>div.ant-card-cover {
   background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/vr.jpg");
-  height: 55%;  
+  height: 55%;
 }
 
 .Stores .ant-row .ant-col-8:nth-child(3)>div>div.ant-card-cover {
   background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/glass.jpg");
-  height: 50%;  
+  height: 50%;
 }
 
 .Stores .ant-card-hoverable {
@@ -123,49 +123,40 @@
 }
 
 @media (min-width: 830px) {
-.Stores{
-  padding-top: initial;
-}
-
-  .Stores h1{
-  font-size: 1.5em;
-}
-
-.Stores a {
-  font-size: 1.15em;
-}
-
-.Stores .ant-row {
-  display: flex;
-  justify-content: space-around;
-  width: 95%;
-  padding-top: 1%;
-  height: 100%;
-  align-items: center;
-  margin: initial;  
-  flex-direction: row;
-}
-
-.Stores .ant-row .ant-col-8 {
-  width: 33.3333333%;
-  height: 100%;
-  margin: 1% 0;
-}
-
-.Stores .ant-row .ant-col-8 .ant-card-head-title {
-  padding: 16px 0;
-}
-
-.Stores .ant-row .ant-col-8 .ant-card-head-title img {
-  width: 80%;
-  margin: 0 auto 1%;  
-}
-
-.Stores .ant-row .ant-col-8:nth-child(1)>div>div.ant-card-cover, 
-.Stores .ant-row .ant-col-8:nth-child(2)>div>div.ant-card-cover,
-.Stores .ant-row .ant-col-8:nth-child(3)>div>div.ant-card-cover {
-  height: 90%;  
-}
-
-
+  .Stores {
+    padding-top: initial;
+  }
+  .Stores h1 {
+    font-size: 1.5em;
+  }
+  .Stores a {
+    font-size: 1.15em;
+  }
+  .Stores .ant-row {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    padding-top: 1%;
+    height: 100%;
+    align-items: center;
+    margin: initial;
+    flex-direction: row;
+  }
+  .Stores .ant-row .ant-col-8 {
+    width: 33.3333333%;
+    height: 100%;
+    margin: 1% 0;
+  }
+  .Stores .ant-row .ant-col-8 .ant-card-head-title {
+    padding: 16px 0;
+  }
+  .Stores .ant-row .ant-col-8 .ant-card-head-title img {
+    width: 80%;
+    margin: 0 auto 1%;
+  }
+  .Stores .ant-row .ant-col-8:nth-child(1)>div>div.ant-card-cover,
+  .Stores .ant-row .ant-col-8:nth-child(2)>div>div.ant-card-cover,
+  .Stores .ant-row .ant-col-8:nth-child(3)>div>div.ant-card-cover {
+    height: 90%;
+  }
 }

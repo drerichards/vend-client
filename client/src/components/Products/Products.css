@@ -175,7 +175,7 @@
     cursor: initial;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
     .Products>div.prod_display>div.prod_img {
         height: 100%;
     }

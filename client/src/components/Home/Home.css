@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.Home > .ant-carousel .slick-slide {
+.Home>.ant-carousel .slick-slide {
   text-align: center;
   height: 90vh;
   overflow: hidden;
@@ -13,28 +13,28 @@
   background-size: cover;
 }
 
-.Home > .ant-carousel .slick-slide:nth-child(1) {
+.Home>.ant-carousel .slick-slide:nth-child(1) {
   background-image: url("https://images.unsplash.com/photo-1494557368142-918e2e3e449a?ixlib=rb-0.3.5&s=281064bcd366053ebd77e3fb43104f3e&auto=format&fit=crop&w=1950&q=80");
 }
 
-.Home > .ant-carousel .slick-slide:nth-child(2) {
+.Home>.ant-carousel .slick-slide:nth-child(2) {
   background-image: url("https://images.unsplash.com/photo-1510502224627-6fe734201896?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d474b0ae2916b7a083666f293d263975&auto=format&fit=crop&w=2700&q=80");
 }
 
-.Home > .ant-carousel .slick-slide:nth-child(3) {
+.Home>.ant-carousel .slick-slide:nth-child(3) {
   background-image: url("https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-0.3.5&s=e5bd33f231c2af32a7bda0b4b070c1d3&auto=format&fit=crop&w=1351&q=80");
 }
 
-.Home > .ant-carousel .slick-slide:nth-child(4) {
+.Home>.ant-carousel .slick-slide:nth-child(4) {
   background-image: url("https://images.unsplash.com/photo-1421757381940-5d269570b21c?ixlib=rb-0.3.5&s=98483b69e1c277f323f83a7691f77bd9&auto=format&fit=crop&w=1953&q=80");
 }
 
-.Home > .ant-carousel .slick-slide:nth-child(5) {
+.Home>.ant-carousel .slick-slide:nth-child(5) {
   background-image: url("https://images.unsplash.com/photo-1515205396030-348ce8a426cd?ixlib=rb-0.3.5&s=bae21a2cf98febb583a45a43eabf4ab8&auto=format&fit=crop&w=1350&q=80");
   background-position: left bottom;
 }
 
-.Home > .ant-carousel .slick-slide h3 {
+.Home>.ant-carousel .slick-slide h3 {
   color: #fff;
 }
 
@@ -46,39 +46,41 @@
   align-items: center;
   top: 50%;
   right: 0.5%;
-left: 0.5%;
+  left: 0.5%;
   transform: translateY(-50%);
   min-width: 300px;
   border-top: 4px double #fff;
   border-bottom: 4px double #fff;
 }
+
 .Home .overlay .ant-carousel {
   position: relative;
 }
 
-.Home > .overlay .ant-carousel .slick-slide {
+.Home>.overlay .ant-carousel .slick-slide {
   text-align: center;
   padding: 2.8em 0 3.1em;
 }
 
-.Home > .overlay .ant-carousel .slick-slider .slick-track,
-.Home > .overlay .ant-carousel .slick-slider .slick-list {
+.Home>.overlay .ant-carousel .slick-slider .slick-track,
+.Home>.overlay .ant-carousel .slick-slider .slick-list {
   height: 220px !important;
 }
-.Home > .overlay .ant-carousel .slick-slide h1,
-.Home > .overlay .ant-carousel .slick-slide h3 {
+
+.Home>.overlay .ant-carousel .slick-slide h1,
+.Home>.overlay .ant-carousel .slick-slide h3 {
   color: #fff;
   text-shadow: 1px 2px 1px #000;
 }
 
-.Home > .overlay .ant-carousel .slick-slide h1 {
+.Home>.overlay .ant-carousel .slick-slide h1 {
   font-family: "Prata", serif;
   font-size: 2em;
   margin: 0.25em 0 0;
   letter-spacing: 1px;
 }
 
-.Home > .overlay .ant-carousel .slick-slide h3 {
+.Home>.overlay .ant-carousel .slick-slide h3 {
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 1.8em;
@@ -105,33 +107,28 @@ left: 0.5%;
 }
 
 @media (min-width: 830px) {
-  .Home > .ant-carousel .slick-slide{
+  .Home>.ant-carousel .slick-slide {
     background-position: center;
   }
-
-  .Home > .ant-carousel .slick-slide:nth-child(1),
-  .Home > .ant-carousel .slick-slide:nth-child(2) {
+  .Home>.ant-carousel .slick-slide:nth-child(1),
+  .Home>.ant-carousel .slick-slide:nth-child(2) {
     background-position: left bottom;
   }
-
-.Home .overlay {
-  width: 55%;
-  left: 5%;
-}
-
-.Home > .overlay .ant-carousel .slick-slide h1 {
-  font-size: 3.35em;
-  margin: 0.55em 0 0;
-  letter-spacing: 1px;
-}
-
-.Home > .overlay .ant-carousel .slick-slide h3 {
-  font-weight: 400;
-  font-size: 3em;
-  font-style: italic;
-}
-
-.Home .overlay a {
-  margin: -0.5em 0 4em;
-}
+  .Home .overlay {
+    width: 55%;
+    left: 5%;
+  }
+  .Home>.overlay .ant-carousel .slick-slide h1 {
+    font-size: 3.35em;
+    margin: 0.55em 0 0;
+    letter-spacing: 1px;
+  }
+  .Home>.overlay .ant-carousel .slick-slide h3 {
+    font-weight: 400;
+    font-size: 3em;
+    font-style: italic;
+  }
+  .Home .overlay a {
+    margin: -0.5em 0 4em;
+  }
 }
