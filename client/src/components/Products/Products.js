@@ -84,17 +84,16 @@ class Products extends Component {
         const productData = this.props.inventory[0]
         
         if (productData) {
-            // console.log(productData[0]);
-       
             return productData.map((product, i) => {
                 if (this.props.inventory[1] === 'Atelier Lks' || this.props.inventory[1] === 'Nurbana') {
                     const displayData = {
                         title: product.name,
                         brand: product.brand,
-                        price: `$${product.skus[0].sale_price}`,
                         image: product.image_urls["420x560"]["0"].url,
                         description: product.content.description
                     }
+                    product.skus.length > 1 ? displayData.price = `$${product.skus[0]['sale_price']}` : displayData.price = '$49.99'
+       
                     return <Card type="inner" title={`${displayData.brand} - ${displayData.title}`} key={i}
                         cover={<img className='displayImage' alt={displayData.title} src={product.image_urls["300x400"]["0"].url}
                             onClick={() => this.onProductClick(displayData)} />}
