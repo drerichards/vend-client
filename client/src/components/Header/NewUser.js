@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from "react-redux"
-import {Button, Modal, Form, Input, Icon} from 'antd';
+import {Button, Modal, Form, Input, Icon, notification} from 'antd';
 import {createUser} from "../../actions/index"
 const FormItem = Form.Item;
 
@@ -38,6 +38,11 @@ const UserCreateForm = Form.create()(
 });
 
 class NewUser extends Component {
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.user.status.length > 1) {
+            this.loginErrorMsg('error', nextProps.user.status)
+        }
+    }
     state = {
         visible: false
     };
@@ -56,6 +61,12 @@ class NewUser extends Component {
             this.setState({visible: false});
         });
     }
+    loginErrorMsg = (type, message) => {
+        notification[type]({
+          message: 'New Account Error',
+          description: message
+        });
+    };
     saveFormRef = (formRef) => {
         this.formRef = formRef;
     }

@@ -55,7 +55,7 @@ export const fetchAtelProducts = (dept, dispatch) => {
   try {
     axios.get(`${url}/products/atelier/${dept}`)
       .then(response => {
-        dispatch({ type: FETCH_ATEL_PRODUCTS, payload: [response.data, "Atelier Lks"] })
+        dispatch({ type: FETCH_ATEL_PRODUCTS, payload: [response.data, "Atelier Lks", false] })
       }).catch(error => { return error })
   } catch (error) { return error }
 }
@@ -64,7 +64,7 @@ export const fetchPokeProducts = (dept, dispatch) => {
   try {
     axios.get(`${url}/products/poketo/${dept}`)
       .then(response => {
-        dispatch({ type: FETCH_POKE_PRODUCTS, payload: [response.data, "Poketo"] })
+        dispatch({ type: FETCH_POKE_PRODUCTS, payload: [response.data, "Poketo", false] })
       }).catch(error => { return error })
   } catch (error) { return error }
 }
@@ -73,7 +73,7 @@ export const fetchNurbProducts = (dept, dispatch) => {
   try {
     axios.get(`${url}/products/nurbana/${dept}`)
       .then(response => {
-        dispatch({ type: FETCH_NURB_PRODUCTS, payload: [response.data, "Nurbana"] })
+        dispatch({ type: FETCH_NURB_PRODUCTS, payload: [response.data, "Nurbana", false] })
       }).catch(error => { return error })
   } catch (error) { return error }
 }

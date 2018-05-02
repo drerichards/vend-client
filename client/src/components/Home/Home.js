@@ -16,7 +16,7 @@ class Home extends Component {
             dots="false"
           >
             <div>
-              <h1>All of your favorite brands</h1>
+              <h1>All of the best brands</h1>
               <h3>All in one place!</h3>
             </div>
             <div>
@@ -37,7 +37,7 @@ class Home extends Component {
           autoplay
           dots="false"
           autoplaySpeed="900"
-          speed="3000"
+          speed="1500"
         >
           <div />
           <div />

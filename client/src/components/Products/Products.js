@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
 import { addToCart } from "../../actions/index"
-import { Card, Icon, Button, message } from 'antd'
+import { Card, Icon, Button, message, Spin } from 'antd'
 import './Products.css'
 
 class Products extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            loading: true,
             title: '',
             brand: '',
             price: '',
@@ -53,6 +54,9 @@ class Products extends Component {
                 image: newProduct.largeImage,
                 description: newProduct.shortDescription
             }))
+        }
+        if (nextProps.inventory[2] === false) {
+            this.setState(() => ({ loading: false}))         
         }
     }
 
@@ -112,33 +116,33 @@ class Products extends Component {
                         actions={[<Icon type="plus-circle" onClick={() => this.onAddButtonClick(displayData)} />, <p>{displayData.price}</p>]}>
                     </Card>
                 }
-
-              
             })
         }
     }
 
     render() {
         return <div className="Products">
-            <div className="prod_display">
-                <div className="prod_img">
-                    <img src={this.state.image} alt={this.state.title} />
-                </div>
-                <div className="product_info">
-                    <Card title={this.state.title}>
-                        {this.state.brand ? <p>Brand: {this.state.brand}</p> : ''}
-                        <p>Price: {this.state.price}</p>
-                        <p>Details: {this.state.description}</p>
-                    </Card>
-                    <Button icon="plus-circle" size='small' onClick={() => this.onDisplayAddClick()}>Add to Cart</Button>
-                </div>
+            <div className={this.state.loading === true ? 'spinner' : 'hide'}>
+            <Spin size="large" tip="Loading Products..." className={this.state.loading === true ? '' : 'hide'}/>
+        </div>
+        <div className={this.state.loading === true ? 'blur prod_display' : 'prod_display'}>
+            <div className="prod_img">
+                <img src={this.state.image} alt={this.state.title} />
             </div>
-            <div className="prod_results">
+            <div className="product_info">
+                <Card title={this.state.title}>
+                    {this.state.brand ? <p>Brand: {this.state.brand}</p> : ''}
+                    <p>Price: {this.state.price}</p>
+                    <p>Details: {this.state.description}</p>
+                </Card>
+                <Button icon="plus-circle" size='small' onClick={() => this.onDisplayAddClick()}>Add to Cart</Button>
+            </div>
+        </div>
+        <div className={this.state.loading === true ? 'blur prod_results' : 'prod_results'}>
                 <Card title={`${this.props.inventory[1]}:  ${this.props.inventory[0] ? this.props.inventory[0].length : 0} Results`}>
                     {this.showProducts()}
                 </Card>
             </div>
-
         </div>
     }
 }
