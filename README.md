@@ -1,2 +1,0 @@
-# vend-client
-# vend-client
