@@ -47,7 +47,7 @@
     text-align: center;
 }
 
-.Products>div.prod_display>div.product_info>button {
+.Products>div.prod_display>div.product_info>button{
     font-family: "Cormorant", serif;
     padding: 1% 5%;
     float: right;
@@ -59,11 +59,6 @@
     transition: 0.15s ease-in;
 }
 
-.Products>div.prod_display>div.product_info>button:hover {
-    background-color: rgba(51, 92, 103, 1);
-    border-color: transparent;
-}
-
 .Products > div.prod_display > div.product_info > .disabled{
     background-color: rgba(51, 92, 103, 0.49);
 }
@@ -72,16 +67,20 @@
     background-color: rgba(51, 92, 103, 0.49);
 }
 
+.ant-tooltip-inner{
+    font-family: "Cormorant", serif;
+}
+.Products>div.prod_display>div.product_info>button:hover {
+    background-color: rgba(51, 92, 103, 1);
+    border-color: transparent;
+}
+
 .Products>div.prod_display>div.product_info>button:focus {
     border-color: transparent;
 }
 
 .Products>div.prod_display>div.product_info>button span {
     font-weight: 500;
-}
-
-.ant-tooltip-inner{
-    font-family: "Cormorant", serif;
 }
 
 .Products>div.prod_display>div.product_info>div>div.ant-card-body {
@@ -190,6 +189,12 @@
 .Products .ant-spin {
     color: #fff;
     font-family: "Playfair Display SC", serif;
+    left: 42%;
+    top: 35%;
+}
+
+.Products .ant-spin-text{
+    display: block !important;
 }
 
 .Products .ant-spin-dot i {
@@ -205,11 +210,11 @@
 }
 
 .Products .ant-spin-dot i:nth-child(3) {
-    background-color: #989a50;
+    background-color: #563635;
 }
 
 .Products .ant-spin-dot i:nth-child(4) {
-    background-color: #708a98;
+    background-color: #546A76;
 }
 
 .Products .spinner {
