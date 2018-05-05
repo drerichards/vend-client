@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
 import { addToCart } from "../../actions/index"
-import { Card, Icon, Button, message, Spin } from 'antd'
+import { Card, Icon, Button, message, Tooltip, Spin } from 'antd'
 import './Products.css'
 
 class Products extends Component {
