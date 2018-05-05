@@ -143,7 +143,8 @@ class Products extends Component {
                     <p>Price: {this.state.price}</p>
                     <p>Details: {this.state.description}</p>
                 </Card>
-                <Button icon="plus-circle" size='small' onClick={() => this.onDisplayAddClick()}>Add to Cart</Button>
+                {this.props.user.loggedIn ? <Button icon="plus-circle" size='small' onClick={() => this.onDisplayAddClick()}>Add to Cart</Button> : 
+                        <Button disabled className='disabled'>Login to Buy</Button>}
             </div>
         </div>
         <div className={this.state.loading === true ? 'blur prod_results' : 'prod_results'}>
