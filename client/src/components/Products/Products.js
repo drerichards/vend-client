@@ -155,8 +155,8 @@ class Products extends Component {
     }
 }
 
-const mapStateToProps = ({ inventory }) => {
-    return { inventory }
+const mapStateToProps = ({ inventory, user }) => {
+    return { inventory, user }
 }
 const mapDispatchToProps = dispatch => {
     return { onAddClick: (product, store) => addToCart(product, store, dispatch) }

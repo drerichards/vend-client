@@ -70,7 +70,7 @@ class NewUser extends Component {
             this.setState({visible: false});
         });
     }
-    loginErrorMsg = (type, message) => {
+    newUserErrorMsg = (type, message) => {
         notification[type]({
         message: 'New Account Error',
         description: message
