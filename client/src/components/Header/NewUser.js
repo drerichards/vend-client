@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from "react-redux"
-import {Button, Modal, Form, Input, Icon, notification} from 'antd';
+import {Button, Modal, Form, Input, Icon, Spin, notification} from 'antd';
 import {createUser} from "../../actions/index"
 const FormItem = Form.Item;
 
