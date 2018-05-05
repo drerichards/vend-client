@@ -28,10 +28,7 @@
   justify-content: flex-end;
 }
 
-.Header .login .ant-btn {
-  width: 5em;
-  margin-left: 2em;
-}
+.Header .login .ant-btn {}
 
 .Header .menu_section div * {
   color: #000;
@@ -59,6 +56,7 @@
 .ant-menu-item .ant-btn:hover,
 .ant-menu-item .ant-btn:focus {
   border-color: #faad14;
+  color: #000;
 }
 
 .ant-menu-item .anticon,
@@ -103,10 +101,10 @@ div sup p {
   text-shadow: 1px 0px 7px #777;
 }
 
+div>button,
 .Header button,
-.Header div button {
+.Header .ant-btn {
   border-radius: 0;
-  padding: 0 5%;
 }
 
 .Header .menu_section div a {
@@ -124,6 +122,45 @@ div sup p {
   border: transparent;
 }
 
+.Header .ant-spin,
+.ant-spin {
+  position: absolute !important;
+  left: 72%;
+  z-index: 999;
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display SC", serif;
+  min-width: initial;
+}
+
+.ant-spin-text {
+  display: none !important;
+}
+
+.Header .ant-spin-dot i,
+.ant-spin-dot i {
+  border-radius: 0 !important;
+}
+
+.Header .ant-spin-dot i:nth-child(1),
+.ant-spin-dot i:nth-child(1) {
+  background-color: #E3B23C;
+}
+
+.Header .ant-spin-dot i:nth-child(2),
+.ant-spin-dot i:nth-child(2) {
+  background-color: #EDEBD7;
+}
+
+.Header .ant-spin-dot i:nth-child(3),
+.ant-spin-dot i:nth-child(3) {
+  background-color: #989a50;
+}
+
+.Header .ant-spin-dot i:nth-child(4),
+.ant-spin-dot i:nth-child(4) {
+  background-color: #708a98;
+}
+
 .ant-menu .ant-menu-item {
   font-family: 'Cormorant';
   margin-top: 10% !important;
@@ -132,6 +169,15 @@ div sup p {
 
 .ant-menu li a button {
   margin-left: 5%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.blur {
+  filter: blur(5px);
+  opacity: 0.3;
 }
 
 @media (min-width: 830px) {
@@ -143,10 +189,22 @@ div sup p {
   }
   .Header .login div {
     width: inherit;
-    min-width: initial;
+    min-width: 7.5em;
   }
   .Header h1 {
     margin: 1% 0;
     font-size: 2.5em;
+  }
+  .Header .login .ant-spin {
+    min-width: initial;
+    left: 43%;
+    top: 0;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+  }
+  .Header .ant-spin-text {
+    display: inline !important;
+    width: 4em;
   }
 }

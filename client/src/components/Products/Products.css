@@ -64,12 +64,24 @@
     border-color: transparent;
 }
 
+.Products > div.prod_display > div.product_info > .disabled{
+    background-color: rgba(51, 92, 103, 0.49);
+}
+
+.Products > div.prod_display > div.product_info > .disabled:hover{
+    background-color: rgba(51, 92, 103, 0.49);
+}
+
 .Products>div.prod_display>div.product_info>button:focus {
     border-color: transparent;
 }
 
 .Products>div.prod_display>div.product_info>button span {
     font-weight: 500;
+}
+
+.ant-tooltip-inner{
+    font-family: "Cormorant", serif;
 }
 
 .Products>div.prod_display>div.product_info>div>div.ant-card-body {

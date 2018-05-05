@@ -1,6 +1,6 @@
 import { CREATE_USER, LOGIN_USER, LOGOUT_USER } from '../actions/types'
 
-export default function (state = {loggedIn: false, username: null, status: ''}, action) {
+export default function (state = {loggedIn: false, username: null, loginStatus: '', newUserStatus: ''}, action) {
     switch (action.type) {
         case CREATE_USER:
             return action.payload

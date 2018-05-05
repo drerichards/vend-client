@@ -21,8 +21,17 @@ class App extends Component {
           <ErrorBoundary>
             <Header />
           </ErrorBoundary>
+
           <ErrorBoundary>
             <Route exact path="/" component={Home} />
+          </ErrorBoundary>
+
+          <ErrorBoundary>
+            <Route path="/stores" component={Stores} />
+          </ErrorBoundary>
+
+          <ErrorBoundary>
+            <Route path="/products" component={Products} />
           </ErrorBoundary>
           <Redirect to={{pathname: '/'}}/> 
         </div>    

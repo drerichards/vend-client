@@ -17,10 +17,10 @@ export const createUser = (userBody, dispatch) => {
     const route = `${url}/api/users`
     axios.post(route, userBody)
         .then(response => {
-                dispatch({ type: CREATE_USER, payload: { loggedIn: true, username: response.data.username, status: '' } })
+                dispatch({ type: CREATE_USER, payload: { loggedIn: true, username: response.data.username, newUserStatus: '' } })
             })
             .catch(error => {
-                dispatch({ type: CREATE_USER, payload: { loggedIn: false, username: null, status: error.response.data.message } })
+                dispatch({ type: CREATE_USER, payload: { loggedIn: false, username: null, newUserStatus: error.response.data.message } })
             })
     } catch (error) {
         return error
@@ -32,10 +32,10 @@ export const loginUser = (userBody, dispatch) => {
         const route = `${url}/api/auth/login`
         axios.post(route, userBody)
             .then(response => {
-                dispatch({ type: LOGIN_USER, payload: { loggedIn: true, username: userBody.username, status: '' } })
+                dispatch({ type: LOGIN_USER, payload: { loggedIn: true, username: userBody.username, loginStatus: '' } })
             })
             .catch(error => {
-                dispatch({ type: LOGIN_USER, payload: { loggedIn: false, username: null, status: 'Incorrect username or password' } })
+                dispatch({ type: LOGIN_USER, payload: { loggedIn: false, username: null, loginStatus: 'Incorrect username or password' } })
             })
     } catch (error) {
         return error

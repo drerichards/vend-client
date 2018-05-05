@@ -7,7 +7,14 @@ const FormItem = Form.Item;
 
 const UserCreateForm = Form.create()(
     class extends Component {
-        render() {
+        constructor(props){
+            super(props)
+            this.state = {
+                showSpin: false
+            }
+        }
+
+    render() {
         const {visible, onCancel, onCreate, form} = this.props;
         const {getFieldDecorator} = form;
         return (
@@ -39,8 +46,9 @@ const UserCreateForm = Form.create()(
 
 class NewUser extends Component {
     componentWillReceiveProps(nextProps) {
-        if (nextProps.user.status.length > 1) {
-            this.loginErrorMsg('error', nextProps.user.status)
+        if (nextProps){this.setState(() => ({showSpin: false})) }        
+        if (nextProps.user.newUserStatus !== undefined) {        
+            this.newUserErrorMsg('error', nextProps.user.newUserStatus)
         }
     }
     state = {
@@ -53,6 +61,7 @@ class NewUser extends Component {
         this.setState({visible: false});
     }
     handleCreate = () => {
+        this.setState(() => ({showSpin: true}))        
         const form = this.formRef.props.form;
         form.validateFields((err, values) => {
             if (err) {return}
@@ -63,8 +72,8 @@ class NewUser extends Component {
     }
     loginErrorMsg = (type, message) => {
         notification[type]({
-          message: 'New Account Error',
-          description: message
+        message: 'New Account Error',
+        description: message
         });
     };
     saveFormRef = (formRef) => {
@@ -74,6 +83,7 @@ class NewUser extends Component {
         return (
             <div>
                 <Button onClick={this.showModal}>New User</Button>
+                <Spin size="large" className={this.state.showSpin === true ? '' : 'hide'}/>                
                 <UserCreateForm
                     wrappedComponentRef={this.saveFormRef}
                     visible={this.state.visible}

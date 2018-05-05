@@ -11,7 +11,7 @@ class Home extends Component {
           <Carousel
             vertical
             autoplay
-            autoplaySpeed="10000"
+            autoplaySpeed="9000"
             speed="2000"
             dots="false"
           >

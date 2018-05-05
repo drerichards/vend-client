@@ -86,6 +86,12 @@ class Products extends Component {
 
     showProducts() {
         const productData = this.props.inventory[0]
+        let iconBtn = ''
+
+        const iconSwitch = (displayData) => {
+            this.props.user.loggedIn ? iconBtn = <Icon type="plus-circle" onClick={() => this.onAddButtonClick(displayData)} /> :
+                iconBtn = <Tooltip title="Login to Buy"><Icon type="lock" /></Tooltip>
+        }
         
         if (productData) {
             return productData.map((product, i) => {
@@ -96,12 +102,13 @@ class Products extends Component {
                         image: product.image_urls["420x560"]["0"].url,
                         description: product.content.description
                     }
+                    iconSwitch(displayData)
                     product.skus.length > 1 ? displayData.price = `$${product.skus[0]['sale_price']}` : displayData.price = '$49.99'
        
                     return <Card type="inner" title={`${displayData.brand} - ${displayData.title}`} key={i}
                         cover={<img className='displayImage' alt={displayData.title} src={product.image_urls["300x400"]["0"].url}
                             onClick={() => this.onProductClick(displayData)} />}
-                        actions={[<Icon type="plus-circle" onClick={() => this.onAddButtonClick(displayData)} />, <p>{displayData.price}</p>]}>
+                        actions={[iconBtn, <p>{displayData.price}</p>]}>
                     </Card>
                 } else {
                     const displayData = {
@@ -110,10 +117,11 @@ class Products extends Component {
                         image: product.largeImage,
                         description: product.shortDescription
                     }
+                    iconSwitch(displayData)
                     return <Card type="inner" title={`${displayData.title}`} key={i}
                         cover={<img className='displayImage' alt={displayData.title} src={displayData.image}
                             onClick={() => this.onProductClick(displayData)} />}
-                        actions={[<Icon type="plus-circle" onClick={() => this.onAddButtonClick(displayData)} />, <p>{displayData.price}</p>]}>
+                        actions={[iconBtn, <p>{displayData.price}</p>]}>
                     </Card>
                 }
             })

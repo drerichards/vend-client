@@ -1,11 +1,18 @@
 import React, {Component} from 'react'
 import {connect} from "react-redux"
-import {Button, Modal, Form, Input, Icon, notification} from 'antd';
+import {Button, Modal, Form, Input, Icon, Spin, notification} from 'antd';
 import {loginUser} from "../../actions/index"
 const FormItem = Form.Item;
 
 const LoginUserForm = Form.create()(
     class extends Component {
+        constructor(props){
+            super(props)
+            this.state = {
+                showSpin: false
+            }
+        }
+
         render() {
             const {visible, onCancel, onCreate, form} = this.props;
             const {getFieldDecorator} = form;
@@ -36,8 +43,9 @@ const LoginUserForm = Form.create()(
 
     class Login extends Component {
         componentWillReceiveProps(nextProps) {
-            if (nextProps.user.status.length > 1) {
-                this.loginErrorMsg('error', nextProps.user.status)
+            if (nextProps){this.setState(() => ({showSpin: false})) }
+            if (nextProps.user.loginStatus !== undefined) {
+                this.loginErrorMsg('error', nextProps.user.loginStatus)
             }
         }
         state = {
@@ -49,7 +57,8 @@ const LoginUserForm = Form.create()(
         handleCancel = () => {
             this.setState({visible: false});
         }
-        handleLogin = () => {        
+        handleLogin = () => {  
+            this.setState(() => ({showSpin: true}))         
             const form = this.formRef.props.form;
             form.validateFields((err, values) => {
                 if (err) {return}
@@ -71,6 +80,7 @@ const LoginUserForm = Form.create()(
             return (
                 <div>
                     <Button onClick={this.showModal}>Login</Button>
+                    <Spin size="large" className={this.state.showSpin === true ? '' : 'hide'}/>
                     <LoginUserForm
                         wrappedComponentRef={this.saveFormRef}
                         visible={this.state.visible}
