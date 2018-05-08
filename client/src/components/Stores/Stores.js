@@ -92,27 +92,35 @@ class Stores extends Component {
       <div className="Stores">
         <h1>Select a Store Department</h1>
         <Row gutter={16}>
-          <Col span={8}>
-            <Card hoverable title={<div><img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/atelier.png" alt="atelier" />
-              <Dropdown placement="bottomCenter" overlay={atelMenu}>
-                <a className="ant-dropdown-link">Departments <Icon type="down" /></a>
-              </Dropdown>
-            </div>} cover={<noscript />} />
-          </Col>
-          <Col span={8}>
-            <Card hoverable title={<div><img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/poketo.png" alt="poketo" />
-              <Dropdown placement="bottomCenter" overlay={pokeMenu}>
-                <a className="ant-dropdown-link">Departments <Icon type="down" /></a>
-              </Dropdown>
-            </div>} cover={<noscript />} />
-          </Col>
-          <Col span={8}>
-            <Card hoverable title={<div><img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/nurbana.png" alt="nurbana" />
-              <Dropdown placement="bottomCenter" overlay={nurbMenu}>
-                <a className="ant-dropdown-link">Departments <Icon type="down" /></a>
-              </Dropdown>
-            </div>} cover={<noscript />} />
-          </Col>
+        <Col span={8}>
+        <Card hoverable title={<div>
+          <Dropdown placement="bottomCenter" overlay={atelMenu}>
+            <a className="ant-dropdown-link"> 
+              <Icon type="down" />
+              <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/atelier.png" alt="atelier" /></a>
+          </Dropdown>
+        </div>} cover={<noscript />} />
+      </Col>
+      <Col span={8}>
+        <Card hoverable title={<div>
+          <Dropdown placement="bottomCenter" overlay={pokeMenu}>
+            <a className="ant-dropdown-link">
+              <Icon type="down" />
+              <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/poketo.png" alt="poketo" />
+            </a>
+          </Dropdown>
+        </div>} cover={<noscript />} />
+      </Col>
+      <Col span={8}>
+        <Card hoverable title={<div>
+          <Dropdown placement="bottomCenter" overlay={nurbMenu}>
+            <a className="ant-dropdown-link">
+              <Icon type="down" />
+              <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/nurbana.png" alt="nurbana" />
+            </a>
+          </Dropdown>
+        </div>} cover={<noscript />} />
+      </Col>
         </Row>
       </div>
     )

@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-top: 5%;
+  padding-top: 1%;
 }
 
 .Stores * {
@@ -24,6 +24,8 @@
 
 .Stores a {
   font-size: 1em;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .ant-dropdown-menu-item,
@@ -70,7 +72,7 @@
 }
 
 .Stores .ant-row .ant-col-8 .ant-card-head-title img {
-  width: 60%;
+  width: 30%;
   display: block;
   margin: 0 auto;
 }
