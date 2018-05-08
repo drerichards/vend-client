@@ -9,10 +9,6 @@
     align-items: center;
 }
 
-.Cart .ant-list-item-meta-avatar {
-    margin-right: 0;
-}
-
 .Cart .ant-list-item-meta .ant-list-item-meta-avatar>span {
     width: 4em;
     height: 4em;
