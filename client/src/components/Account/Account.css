@@ -122,7 +122,7 @@
     flex: initial;
 }
 
-@media (min-width: 830px) {
+@media (min-width: 650px) {
 #root > div > div.Account{
     width: 70vw;
 }

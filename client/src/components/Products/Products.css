@@ -1,4 +1,8 @@
 .Products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: "Monospaced Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -186,6 +190,12 @@
     cursor: initial;
 }
 
+.Products .ant-dropdown-menu-item, 
+.Products .ant-dropdown-menu-submenu-title{
+    font-size: 1.2em !important;
+    padding: 7% 5% !important;
+}
+
 .Products .ant-spin {
     color: #fff;
     font-family: "Playfair Display SC", serif;
@@ -243,7 +253,7 @@
     }
 }
 
-@media (min-width: 830px) {
+@media (min-width: 650px) {
     .Products .prod_results .ant-card-type-inner {
         width: 24%;
         margin: 1px;

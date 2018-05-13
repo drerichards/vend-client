@@ -41,7 +41,7 @@ class Header extends Component {
       </Link>
       {!this.props.user.loggedIn
         ? <div className="menu_section login">
-        {window.innerWidth <= 830 ? 
+        {window.innerWidth <= 650 ? 
           <Menu
             onClick={this.handleClick}
             mode="horizontal">
@@ -56,7 +56,7 @@ class Header extends Component {
         }
           </div>
         : <div className="menu_section">
-        {window.innerWidth <= 830 ? 
+        {window.innerWidth <= 650 ? 
           <div>
             <p>Hello, {this.props.user.username}</p>        
             <Menu

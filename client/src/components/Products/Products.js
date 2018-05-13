@@ -18,22 +18,25 @@ class Products extends Component {
     }
 
     componentDidMount() {
-        const firstProduct = this.props.inventory[0][0]
-        if (this.props.inventory[1] === 'Atelier Lks' || this.props.inventory[1] === 'Nurbana') {
-            this.setState(() => ({
-                title: firstProduct.name,
-                brand: firstProduct.brand,
-                price: `$${firstProduct.skus[0].sale_price}`,
-                image: firstProduct.image_urls["420x560"]["0"].url,
-                description: firstProduct.content.description
-            }))
-        } else {
-            this.setState(() => ({
-                title: firstProduct.name,
-                price: `$${firstProduct.salePrice}`,
-                image: firstProduct.largeImage,
-                description: firstProduct.shortDescription
-            }))
+        if(this.props.inventory[0]){
+            const firstProduct = this.props.inventory[0][0]
+            if (this.props.inventory[1] === 'Atelier Lks' || this.props.inventory[1] === 'Nurbana') {
+                this.setState(() => ({
+                    title: firstProduct.name,
+                    brand: firstProduct.brand,
+                    price: `$${firstProduct.skus[0].sale_price}`,
+                    image: firstProduct.image_urls["420x560"]["0"].url,
+                    description: firstProduct.content.description
+                }))
+            } else {
+                this.setState(() => ({
+                    title: firstProduct.name,
+                    brand: '',
+                    price: `$${firstProduct.salePrice}`,
+                    image: firstProduct.largeImage,
+                    description: firstProduct.shortDescription
+                }))
+            }
         }
     }
     

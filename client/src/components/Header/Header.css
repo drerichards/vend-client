@@ -180,7 +180,11 @@ div>button,
   opacity: 0.3;
 }
 
-@media (min-width: 830px) {
+@media (min-width: 650px) and (orientation: landscape){
+
+}
+
+@media (min-width: 650px) {
   .Header .menu_section,
   .Header .menu_section div {
     width: 35%;

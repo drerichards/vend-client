@@ -32,8 +32,8 @@
 .ant-dropdown-menu-submenu-title {
   font-family: "Cormorant", serif;
   color: #000 !important;
-  font-size: 1.4em !important;
-  padding: 10% 5% !important;
+  font-size: 1em !important;
+  padding: 7% 5% !important;
   text-align: center;
   border-top: 0.5px solid rgba(189, 188, 188, 0.355);
 }
@@ -72,7 +72,7 @@
 }
 
 .Stores .ant-row .ant-col-8 .ant-card-head-title img {
-  width: 30%;
+  width: 45%;
   display: block;
   margin: 0 auto;
 }
@@ -124,7 +124,7 @@
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25) !important;
 }
 
-@media (min-width: 830px) {
+@media (min-width: 650px) {
   .Stores {
     padding-top: initial;
   }

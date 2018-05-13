@@ -105,7 +105,7 @@ iframe {
     display: none;
 }
 
-@media (min-width: 830px) {
+@media (min-width: 650px) {
     #root>div>div.Cart {
         width: 70vw;
     }

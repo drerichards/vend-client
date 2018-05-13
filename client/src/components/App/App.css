@@ -2,7 +2,7 @@
   height: 90vh;
 }
 
-@media (min-width: 830px) {
+@media (min-width: 650px) {
   .App>div:nth-child(2) {
     margin: 0% 2% 2%;
     height: 85vh;
