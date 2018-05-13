@@ -93,25 +93,31 @@ class Stores extends Component {
         <h1>Select a Store Department</h1>
         <Row gutter={16}>
         <Col span={8}>
-        <Dropdown placement="bottomCenter" overlay={atelMenu}>
-          <Card hoverable title={<div>
-            <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/atelier.png" alt="atelier" />
-            </div>} cover={<noscript />} />
-          </Dropdown>
+        <Card hoverable title={
+          <Dropdown placement="bottomCenter" overlay={atelMenu}>
+              <div>
+                <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/atelier.png" alt="atelier" />
+              </div>
+            </Dropdown>
+          } cover={<noscript />} />
       </Col>
       <Col span={8}>
+      <Card hoverable title={
         <Dropdown placement="bottomCenter" overlay={pokeMenu}>
-          <Card hoverable title={<div>
-            <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/poketo.png" alt="poketo" />
-            </div>} cover={<noscript />} />
-        </Dropdown>
+              <div>
+                <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/poketo.png" alt="poketo" />
+              </div>
+            </Dropdown>
+          } cover={<noscript />} />
       </Col>
       <Col span={8}>
+      <Card hoverable title={
         <Dropdown placement="bottomCenter" overlay={nurbMenu}>
-          <Card hoverable title={<div>
-            <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/nurbana.png" alt="nurbana" />
-            </div>} cover={<noscript />} />
-        </Dropdown>
+            <div>
+              <img src="https://res.cloudinary.com/andrerichards/image/upload/v1519781397/vend/nurbana.png" alt="nurbana" />
+            </div>
+            </Dropdown>
+          } cover={<noscript />} />
       </Col>
         </Row>
       </div>
