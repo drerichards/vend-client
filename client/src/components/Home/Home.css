@@ -14,23 +14,23 @@
 }
 
 .Home>.ant-carousel .slick-slide:nth-child(1) {
-  background-image: url("https://images.unsplash.com/photo-1494557368142-918e2e3e449a?ixlib=rb-0.3.5&s=281064bcd366053ebd77e3fb43104f3e&auto=format&fit=crop&w=1950&q=80");
+  background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1526241563/vend/girls.jpg");
 }
 
 .Home>.ant-carousel .slick-slide:nth-child(2) {
-  background-image: url("https://images.unsplash.com/photo-1510502224627-6fe734201896?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d474b0ae2916b7a083666f293d263975&auto=format&fit=crop&w=2700&q=80");
+  background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1526241563/vend/bed.jpg");
 }
 
 .Home>.ant-carousel .slick-slide:nth-child(3) {
-  background-image: url("https://images.unsplash.com/photo-1445205170230-053b65016050?ixlib=rb-0.3.5&s=e5bd33f231c2af32a7bda0b4b070c1d3&auto=format&fit=crop&w=1351&q=80");
+  background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1526241563/vend/clothes.jpg");
 }
 
 .Home>.ant-carousel .slick-slide:nth-child(4) {
-  background-image: url("https://images.unsplash.com/photo-1421757381940-5d269570b21c?ixlib=rb-0.3.5&s=98483b69e1c277f323f83a7691f77bd9&auto=format&fit=crop&w=1953&q=80");
+  background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1526241563/vend/ipad.jpg");
 }
 
 .Home>.ant-carousel .slick-slide:nth-child(5) {
-  background-image: url("https://images.unsplash.com/photo-1515205396030-348ce8a426cd?ixlib=rb-0.3.5&s=bae21a2cf98febb583a45a43eabf4ab8&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("https://res.cloudinary.com/andrerichards/image/upload/v1526241563/vend/shades.jpg");
   background-position: left bottom;
 }
 

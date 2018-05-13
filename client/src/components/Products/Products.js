@@ -40,6 +40,14 @@ class Products extends Component {
         }
     }
     
+    componentDidUpdate(prevProps) {
+        if(prevProps.inventory === this.props.inventory && this.state.loading === true) {
+            this.setState({ loading: !this.state.loading})
+        } else if (prevProps.inventory !== this.props.inventory && this.state.loading === false) {
+            this.setState({ loading: !this.state.loading})                
+        }
+    }
+
     componentWillReceiveProps(nextProps){
         const newProduct = nextProps.inventory[0][0];
         if (nextProps.inventory[1] === 'Atelier Lks' || nextProps.inventory[1] === 'Nurbana') {

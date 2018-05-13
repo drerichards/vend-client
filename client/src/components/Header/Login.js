@@ -33,7 +33,7 @@ const LoginUserForm = Form.create()(
                                         required: true,
                                         message: 'Please input your password'
                                     }]
-                            })(<Input placeholder='abc123!@#' prefix={<Icon type="lock" />} type="password" />)}
+                            })(<Input placeholder='abc123' prefix={<Icon type="lock" />} type="password" />)}
                         </FormItem>
                     </Form>
                 </Modal>
