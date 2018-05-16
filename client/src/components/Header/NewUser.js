@@ -20,7 +20,7 @@ const UserCreateForm = Form.create()(
         return (
             <Modal visible={visible} title="Create a New Account" okText="Create" onCancel={onCancel} onOk={onCreate}>
                 <Form layout="vertical">
-                    <FormItem label="Username:">
+                    <FormItem label="Username: (Or Login as 'NewShopper')">
                         {getFieldDecorator('username', {
                             rules: [{
                                     required: true,
@@ -29,7 +29,7 @@ const UserCreateForm = Form.create()(
                                 }]
                         })(<Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Minimum 5 Characters"/>)}
                     </FormItem>
-                    <FormItem label="Password:">
+                    <FormItem label="Password: (Or Use Password 'abc123')">
                         {getFieldDecorator('password', {
                             rules: [{
                                     required: true,

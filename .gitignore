@@ -2,3 +2,5 @@ dist
 node_modules
 .DS_Store
 .env
+
+netlify deploy -p ./build -t 032a8042494140e6d05ac9bc534a87c81c1f28dc2ccf06804b8dba182f7123f8 -s 55267041-15e4-4234-ba5b-049c7cc50ace

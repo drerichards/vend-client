@@ -19,7 +19,7 @@ const LoginUserForm = Form.create()(
             return (
                 <Modal visible={visible} title="Welcome Back!" okText="Login" onCancel={onCancel} onOk={onCreate}>
                     <Form layout="vertical">
-                        <FormItem label="Username: (NewShopper)">
+                        <FormItem label="Username =>> 'NewShopper'">
                             {getFieldDecorator('username', {
                                 rules: [{
                                         required: true,
@@ -27,7 +27,7 @@ const LoginUserForm = Form.create()(
                                     }]
                             })(<Input placeholder='NewShopper' prefix={<Icon type="user" />} />)}
                         </FormItem>
-                        <FormItem label="Password: (abc123!@#)">
+                        <FormItem label="Password =>> 'abc123'">
                             {getFieldDecorator('password', {
                                 rules: [{
                                         required: true,
